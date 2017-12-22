@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.4-stretch
 MAINTAINER Campus Code <dev@campuscode.com.br>
 
 ENV NODE_VERSION 7
