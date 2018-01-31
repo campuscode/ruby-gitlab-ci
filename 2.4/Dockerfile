@@ -5,7 +5,14 @@ ENV NODE_VERSION 7
 RUN curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
 
 RUN apt-get update -qq
-RUN apt-get install -y --no-install-recommends nodejs locales
+RUN apt-get install -y --no-install-recommends nodejs \
+      locales \
+      qt5-default \
+      libqt5webkit5-dev \
+      gstreamer1.0-plugins-base \
+      gstreamer1.0-tools \
+      gstreamer1.0-x \
+      xvfb
 
 ENV PHANTOMJS_VERSION 2.1.1
 RUN curl -L -O https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
