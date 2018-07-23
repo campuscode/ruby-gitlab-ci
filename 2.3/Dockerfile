@@ -1,4 +1,4 @@
-FROM ruby:2.3
+FROM ruby:2.3-jessie
 MAINTAINER Campus Code <dev@campuscode.com.br>
 
 ENV NODE_VERSION 7
