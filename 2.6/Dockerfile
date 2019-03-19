@@ -6,7 +6,7 @@ RUN curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
 
 RUN apt-get update -qq
 RUN apt-get install -y --no-install-recommends nodejs \
-      locales \
+      locales
 
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 RUN locale-gen
