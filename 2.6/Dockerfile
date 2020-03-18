@@ -1,7 +1,7 @@
 FROM ruby:2.6
 MAINTAINER Campus Code <dev@campuscode.com.br>
 
-ENV NODE_VERSION 8
+ENV NODE_VERSION 12
 RUN curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
 
 RUN apt-get update -qq
